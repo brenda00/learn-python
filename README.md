@@ -1,23 +1,44 @@
-# learn-python
+# 📡 Decode Morse
 
-Repositório destinado ao ensino da linguagem python para iniciantes.
+Bem-vindo ao projeto **Decode Morse**! 🚀 Este projeto serve para decodificar mensagens em código Morse. Vamos transformar aqueles "pontos e traços" em palavras e frases compreensíveis!
 
-<img src="imgs/python.jpg" style="max-width:1000px; "/>
+## 📚 Sobre o Projeto
 
+Este projeto foi criado como parte da matéria **Python for Data Engineer** da pós-graduação em **Data Engineer**.
 
-### Conteúdo
----
-1. Fundamentos
-2. Pandas
-3. Visualização de Dados
-4. Análise de Dados
-5. Ingestão de dados
+### Regras para o Projeto
 
-### Organização do repositório
----
-O repositório está organizado da seguinte forma
-- DESAFIOS : pequenos desafios de programação para testar suas habilidades de código e raciocínio lógico ;
-- NOTEBOOKS : notebooks com exemplos dos conteúdos abordados ;
-- PROJETOS : aplicação dos conteúdos abordados em pequenos projetos. 
+- **Letras**: separadas por um espaço.
+- **Palavras**: separadas por dois espaços.
 
-As imagens utilizadas nos notebooks foram extraídas de: https://pythoniluminado.netlify.app
+## 🛠️ Como Funciona
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/carollzambelli/learn-python.git
+   
+2. Crie um ambiente virtual:
+   ```bash
+    python -m venv env
+   
+3. Instale o requirements:
+   ```bash
+    pip install -r requirements.txt
+
+3. Insira sua mensagem em código Morse e veja a mágica acontecer! ✨
+   
+## 📝 Exemplos de Uso
+Aqui estão três cenários diferentes para você testar:
+
+1. Frase Completa
+   ```bash
+   .... --- .--  .- .-. .  -.-- --- ..-  -.. --- .. -. --.  - --- -.. .- -.-- ..--..
+   Saída: HOW ARE YOU DOING TODAY?
+2. Mensagem de Emergência:
+   ```bash
+   ... --- ...  .... . .-.. .--.
+   Saída: SOS HELP
+
+  
+  
+
