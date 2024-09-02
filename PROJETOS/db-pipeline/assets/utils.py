@@ -4,7 +4,7 @@ import logging
 import datetime
 
 
-logging.basicConfig(filename='data/flights_pipe_log.log', level=logging.INFO)
+logging.basicConfig(filename='PROJETOS/db-pipeline/data/flights_pipe_log.log', level=logging.INFO)
 logger = logging.getLogger()
 
 def read_metadado(meta_path):
@@ -96,12 +96,15 @@ def null_check(df, null_tolerance):
             
 def keys_check(df, cols_chaves):
     '''
-    Função ???????????????????????????
-    INPUT: ???????????????????????????
-    OUTPUT: ???????????????????????????
+    Função A função keys_check tem o objetivo de realizar verificações de qualidade de dados em um DataFrame. Especificamente, 
+            ela verifica a presença de valores nulos em uma coluna-chave (tailnum) e a unicidade de combinações de colunas-chave especificadas.
+    INPUT:  Um DataFrame Pandas que contém os dados a serem verificados.
+    OUTPUT: A função gera logs informativos e de alerta
     '''
-    #colocar log info
-    pass
+    logger.info(f"{cols_chaves} validação das chaves; {datetime.datetime.now()}")
+    print(cols_chaves)
+    len(df[cols_chaves].drop_duplicates()) == len(df)
+    
 
 # Funções auxiliares -------------------------------------------
 
