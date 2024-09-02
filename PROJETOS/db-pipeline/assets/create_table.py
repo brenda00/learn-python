@@ -1,7 +1,7 @@
 import sqlite3
 
 # Conectando/Criando um SQLite database
-conn = sqlite3.connect("../data/NyflightsDB.db")
+conn = sqlite3.connect("PROJETOS/db-pipeline/data/NyflightsDB.db")
 
 # Criando um cursos
 c = conn.cursor()
